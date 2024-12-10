@@ -1,101 +1,317 @@
-import Image from "next/image";
-
+import "./style.css";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      {/* =================================== Header ================================ */}
+      <header className="header">
+        <img src="img/ei_1655973219297-removebg-preview.png" alt="" />
+        <img src="img/icons8-menu-30.png" id="menu" className="img" alt="" />
+        <nav id="nav">
+          <div className="menu">
+            <a href="#home">HOME</a>
+            <a href="#services">SERVICES</a>
+            <a href="#testimonial">TESTIMONIALS</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#about" className="about-a">
+              ABOUT
+            </a>
+            <a href="#contact" className="about-a">
+              CONTACT
+            </a>
+          </div>
+          <div className="icons">
+            <img src="img/icons8-search-50.png" alt="" />
+            <img src="img/icons8-shopping-cart-24.png" alt="" />
+          </div>
+        </nav>
+      </header>
+      {/* =================================== End Header =============================== */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+      {/* =================================== Home =============================== */}
+      <section id="home" className="home">
+        <div className="content">
+          <h5>WELCOME BARBER SHOP</h5>
+          <h1>Achieve Your Style</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <a href="#services" className="btn">
+            Our Services <span></span>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+      {/* =================================== End Home =============================== */}
+
+      {/* =================================== Services =============================== */}
+      <section className="services" id="services">
+        <div className="container-services">
+          <div className="title-services">
+            <div className="title">
+              <h5 className="header-title">BARBER SHOP</h5>
+              <h1>Our Services</h1>
+              <span></span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur <br /> Facilis quia aliquam
+              neque.
+            </p>
+          </div>
+          <div className="boxes">
+            <div className="box">
+              <img src="img/1.png" alt="" />
+              <h3>Hair Styling</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur.
+                <br />
+              </p>
+            </div>
+            <div className="box">
+              <img src="img/2.png" alt="" />
+              <h3>Styling The Beard</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. <br />
+              </p>
+            </div>
+            <div className="box">
+              <img src="img/3.png" className="img-3" alt="" />
+              <h3>Free Face Mask</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. <br />
+              </p>
+            </div>
+            <div className="box">
+              <img src="img/4.png" alt="" />
+              <h3>Moustache</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================== End Services =============================== */}
+
+      {/* =================================== Testimonial =============================== */}
+      <section className="testimonial" id="testimonial">
+        <div className="title-1">
+          <h5 className="header-title">BARBER SHOP</h5>
+          <h1>Our Testimonials</h1>
+          <p></p>
+        </div>
+        <div className="container-testimonial">
+          <div className="box">
+            <div className="user">
+              <img src="img/test-1.jpg" alt="" />
+              <div className="user-info">
+                <h3>Gharles Alexander</h3>
+                <small>@gharlesalexander</small>
+              </div>
+              <img src="img/icons8-twitter-48.png" className="img" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis
+              repellat et saepe dolores quia mollitia odio ex sed
+              praesentium.Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. At quis repellat et saepe dolores quiaLorem ipsum dolor sit
+              amet consectetur adipisicing elit. At quis repellat et saepe
+              dolores quia
+            </p>
+          </div>
+          <div className="box">
+            <div className="user">
+              <img src="img/test-2.jpg" alt="" />
+              <div className="user-info">
+                <h3>Christopher Anna</h3>
+                <small>@christopheranna</small>
+              </div>
+              <img src="img/icons8-twitter-48.png" className="img" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis
+              repellat et saepe Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.{" "}
+            </p>
+          </div>
+          <div className="box">
+            <div className="user">
+              <img src="img/test-3.jpg" alt="" />
+              <div className="user-info">
+                <h3>Michael Emma</h3>
+                <small>@michaelemma</small>
+              </div>
+              <img src="img/icons8-twitter-48.png" className="img" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis
+              repellat et saepe dolores quia mollitia odio ex sed
+              praesentium.Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. At quis repellat et saepe dolores quiaLorem ipsum dolor sit
+              amet consectetur adipisicing elit. At quis repellat et saepe
+              dolores quia
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* =================================== End Testimonial =============================== */}
+
+      {/* =================================== Gallery =============================== */}
+      <section className="gallery" id="gallery">
+        <div className="title-1">
+          <h5 className="header-title">BARBER SHOP</h5>
+          <h1>Our Gallery</h1>
+          <p></p>
+        </div>
+        <div className="container-gallery">
+          <div className="img">
+            <img src="img/pic-1.jpg" alt="" />
+          </div>
+          <div className="img">
+            <img src="img/pic-2.jpg" alt="" />
+          </div>
+          <div className="img">
+            <img src="img/pic-3.jpg" alt="" />
+          </div>
+          <div className="img">
+            <img src="img/pic-4.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      {/* =================================== End Gallery =============================== */}
+
+      {/* =================================== About =============================== */}
+      <section className="about" id="about">
+        <div className="title-1">
+          <h5 className="header-title">BARBER SHOP</h5>
+          <h1>About Us</h1>
+          <p></p>
+        </div>
+        <div className="container-about">
+          <div className="img">
+            <img src="img/gale-3.jpg" alt="" />
+          </div>
+          <div className="text">
+            <h1>What Do You Know About Us?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab
+              exercitationem tenetur id, vel esse! Quaerat consequatur repellat
+              hic laudantium ut aut deserunt ea assumenda culpa voluptas error
+              quibusdam illum, perferendis, dignissimos nulla odit
+              necessitatibus cumque totam sint harum. Dicta eligendi ad harum
+              quisquam molestiae sit magni natus, porro at porro at odit.
+            </p>
+            <a href="#about" className="btn">
+              About Us <span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* =================================== End About =============================== */}
+
+      {/* =================================== Contact =============================== */}
+      <section className="contact" id="contact">
+        <div className="title-1">
+          <h5 className="header-title">BARBER SHOP</h5>
+          <h1>Contact Us</h1>
+          <p></p>
+        </div>
+        <div className="container-contact">
+          <div className="img">
+            <img src="img/img-map.jpg" alt="" />
+          </div>
+          <div className="text">
+            <h1>Get in Touch</h1>
+            <div className="row">
+              <div className="col">
+                <p>New York</p>
+                <p>NY 10253</p>
+              </div>
+              <div className="col">
+                <p>351 123 456 7890</p>
+                <p>Barber@shop.com</p>
+              </div>
+            </div>
+            <div className="input">
+              <input type="text" placeholder="Name" />
+              <br />
+              <input type="text" placeholder="Phone Number" />
+              <br />
+              <textarea
+                cols="20"
+                rows="3"
+                placeholder="Message and time booking"
+              ></textarea>
+              <br />
+
+              <label className="text-white" htmlFor="time">
+                Select Time
+              </label>
+              <input type="time" id="time" name="time" />
+              <br />
+
+              <a href="#home" className="btn">
+                SEND <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================== End Contact =============================== */}
+
+      {/* =================================== Footer =============================== */}
+      <section className="footer">
+        <div className="row">
+          <img src="img/Footer.png" className="img" alt="" />
+          <div className="col">
+            <div className="head">
+              <img src="img/ei_1655973219297-removebg-preview.png" alt="" />
+              <div className="title">
+                <h1>
+                  BARBER <span> SHOP</span>
+                </h1>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum
+              maxime, possimus fuga voluptate ullam provident temporibus quas
+              velit beatae odit.
+            </p>
+            <div className="icons">
+              <img src="img/icons8-facebook-24.png" alt="" />
+              <img src="img/icons8-twitter-circled-50.png" alt="" />
+              <img src="img/icons8-instagram-50.png" alt="" />
+              <img src="img/icons8-pinterest-50.png" alt="" />
+            </div>
+          </div>
+          <div className="col">
+            <h1 className="new">Newsletter</h1>
+            <input type="text" placeholder="your@email.com" />
+            <br />
+            <a href="#" className="btn">
+              SUBSCRIBE <span></span>
+            </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              est praesentium labore eaque dolorem ducimus enim dolore cum sunt
+              iure.
+            </p>
+          </div>
+        </div>
+        <div className="footer-end">
+          <div className="copy">
+            <p>
+              {" "}
+              <span>Barber</span> &copy; 2022. All Rights Reserved.
+            </p>
+          </div>
+          <div className="nav">
+            <a href="#home">HOME</a>
+            <a href="#services">SERVICES</a>
+            <a href="#testimonial">TESTIMONIALS</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </section>
+      {/* =================================== End Footer =============================== */}
     </div>
   );
 }
